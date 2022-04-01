@@ -1,0 +1,44 @@
+{
+  "name": "eft_map",
+  "version": "1.0.0",
+  "description": "eft map",
+  "main": "main.js",
+  "build": {
+    "appId": "com.electron.leaf",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "images",
+      "icon.ico",
+      "index.css",
+      "index.html",
+      "index.js",
+      "main.js",
+      "package-lock.json",
+      "package.json"
+    ],
+    "mac": {
+      "icon": "icon.ico",
+      "target": [
+        "dmg"
+      ]
+    },
+    "win": {
+      "icon": "icon.ico",
+      "target": "nsis"
+    },
+    "nsis":{
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "leaf",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-builder": "^22.9.1"
+  }
+}

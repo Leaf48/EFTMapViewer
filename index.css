@@ -1,0 +1,33 @@
+body{
+    /* background-image: url("./images/eft_background.png"); */
+    /* background-repeat: no-repeat; */
+    background-color: rgba(51, 51, 51, .1);
+    /* background-color: #333; */
+    -webkit-app-region: drag;
+    padding: 0;
+    margin: 0;
+}
+body h1, ul, li{
+    color:white
+}
+
+body ul li{
+    text-decoration: none;
+}
+#map{
+    height: 100%;
+    width: 100%;
+    opacity: 0.5;
+}
+body div{
+    -webkit-app-region: no-drag;
+}
+#range{
+    -webkit-app-region: no-drag;
+}
+select{
+    -webkit-app-region: no-drag;
+}
+#end{
+    -webkit-app-region: no-drag;
+}

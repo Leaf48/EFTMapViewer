@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EFT MAP made by leaf</title>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1 id="mapTitle">マップを選択してください</h1>
+    <img src="" id="map">
+    <form>
+        <select name="maps" onchange="mapSelect(this)">
+            <option value="0">Customs（カスタム）</option>
+            <option value="1">Interchange(インターチェンジ)</option>
+            <option value="2">Factory（ファクトリー）</option>
+            <option value="3">Woods（ウッズ）</option>
+            <option value="4">Shoreline（ショアライン）</option>
+            <option value="5">Reserve（リザーブ）</option>
+            <option value="6">The Lab（研究所）</option>
+        </select>
+    </form>
+    <div>
+        <p style="color: white;">透明度</p>
+        <input type="range" id="range" min="0" max="10" step="1" value="3" onchange="rangeChange(this)">
+    </div>
+    <input type="button" id="end" value="閉じる" onclick="end()">
+    
+</body>
+</html>
